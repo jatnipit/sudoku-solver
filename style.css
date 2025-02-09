@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #d4d4d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.sudoku-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 4px solid #000;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #999;
+  transition: all 0.3s ease-in-out;
+}
+
+table tr:nth-child(3n) td,
+table tr:nth-child(3n + 3) td {
+  border-bottom: 2px solid #000;
+}
+
+table td:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+
+input {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#solve-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #039be5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#clear-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff3030;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#solve-btn:hover {
+  background-color: #0056b3;
+}
+
+#clear-btn:hover {
+  background-color: #a32121;
+}
+
+.solved {
+  background-color: #50fd50ad;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+#numpad {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.numpad-btn {
+  background-color: #fff;
+  color: #039be5;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.numpad-btn:hover {
+  background-color: #ebebeb;
+}
